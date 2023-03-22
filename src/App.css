@@ -1,0 +1,140 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.fireballs {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  max-height: 350px;
+  margin-top: 100px;
+}
+
+.fireballs li {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  list-style: none;
+  transform-origin: 50% 50%;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.fireballs li:nth-child(1) {
+  transition: all 0.3s ease-in-out;
+}
+.fireballs li:nth-child(2) {
+  transition: all 0.9s ease-in-out;
+}
+.fireballs li:nth-child(3) {
+  transition: all 1.6s ease-in-out;
+}
+.fireballs li:nth-child(4) {
+  transition: all 2.1s ease-in-out;
+}
+.fireballs li:nth-child(5) {
+  transition: all 2.6s ease-in-out;
+}
+.fireballs li:nth-child(6) {
+  transition: all 3s ease-in-out;
+}
+.fireballs li:nth-child(7) {
+  transition: all 3.4s ease-in-out;
+}
+.fireballs li:nth-child(8) {
+  transition: all 3.8s ease-in-out;
+}
+.fireballs li:nth-child(9) {
+  transition: all 4s ease-in-out;
+}
+.fireballs li:nth-child(10) {
+  transition: all 4.3s ease-in-out;
+}
+
+.backgroundNullResult {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  animation: fade-in-out-null-result 3s linear;
+}
+
+@keyframes fade-in-out-null-result {
+  0% {
+    opacity: 0;
+  }
+  16.67% {
+    opacity: 1;
+  }
+  83.33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+  38% {
+    transform: scale(0.8, 1) rotate(160deg);
+  }
+  40% {
+    transform: scale(0.8, 1) rotate(60deg);
+  }
+  78% {
+    transform: scale(1.3) rotate(-20deg);
+  }
+  80% {
+    transform: scale(1.3) rotate(-80deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation fade-out
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-out {
+  0% {
+    opacity: 1 !important;
+  }
+  80%{
+    opacity: 0.8 !important;
+  }
+  100% {
+    opacity: 0 !important;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1 !important;
+  }
+  80%{
+    opacity: 0.8 !important;
+  }
+  100% {
+    opacity: 0 !important;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 5s ease-out both;
+  animation: fade-out 5s ease-out both;
+}
