@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
-import { animated, useTransition } from "react-spring";
 
 import "./App.css";
 import fireball from "./assets/fire-fireball.gif";
@@ -117,7 +116,7 @@ function App() {
 
   setTimeout(() => {
     setActive(true);
-  }, 3000);
+  }, 2000);
 
   return (
     <Container>
