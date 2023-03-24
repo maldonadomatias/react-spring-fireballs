@@ -82,7 +82,7 @@ function App() {
       let style: CSSProperties = {
         transform: `translate(${
           -startPosition + separationBetweenBalls * i
-        }px, 140px)`,
+        }px, 130px)`,
       };
 
       styles.push({ key: i, value: style });
